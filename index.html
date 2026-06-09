@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>LAPL Flashcards</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #232736;
+      --border: #2e3347;
+      --text: #e8eaf0;
+      --text-muted: #7b82a0;
+      --accent: #4f7cff;
+      --accent-dim: #2a3f7a;
+      --green: #3ecf8e;
+      --green-dim: #1a5c3f;
+      --red: #ff6b6b;
+      --red-dim: #5c2a2a;
+      --radius: 16px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      width: 100%;
+      max-width: 480px;
+      padding: 20px 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .header-back {
+      width: 36px; height: 36px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .header-back:active { opacity: 0.7; }
+    .header-title { font-size: 17px; font-weight: 600; }
+
+    /* ── SCREENS ── */
+    .screen {
+      display: none;
+      width: 100%;
+      max-width: 480px;
+      flex: 1;
+      flex-direction: column;
+      padding: 24px 20px 32px;
+    }
+    .screen.active { display: flex; }
+
+    /* ── TOPIC SCREEN ── */
+    #screen-topics .app-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    #screen-topics .app-subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+    #screen-topics h2 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .topic-list { display: flex; flex-direction: column; gap: 12px; }
+    .topic-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .topic-card:active { background: var(--surface2); border-color: var(--accent); }
+    .topic-emoji { font-size: 28px; flex-shrink: 0; }
+    .topic-info { flex: 1; min-width: 0; }
+    .topic-name { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+    .topic-meta {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .topic-progress-bar {
+      height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .topic-progress-fill {
+      height: 100%;
+      background: var(--green);
+      border-radius: 2px;
+      transition: width 0.4s;
+    }
+    .topic-arrow {
+      color: var(--text-muted);
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .topic-card.loading .topic-name { color: var(--text-muted); }
+
+    /* ── CARD SCREEN ── */
+    #screen-card {
+      gap: 0;
+    }
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .progress-label {
+      font-size: 14px;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+    .progress-bar {
+      flex: 1;
+      height: 5px;
+      background: var(--border);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--accent);
+      border-radius: 3px;
+      transition: width 0.3s;
+    }
+    .remaining-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    /* ── FLIP CARD ── */
+    .card-scene {
+      flex: 1;
+      perspective: 1200px;
+      cursor: pointer;
+      min-height: 300px;
+      max-height: 460px;
+    }
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.45s cubic-bezier(0.4, 0.2, 0.2, 1);
+    }
+    .card-inner.flipped { transform: rotateY(180deg); }
+    .card-face {
+      position: absolute;
+      inset: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 24px;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+    .card-face.back {
+      transform: rotateY(180deg);
+      background: var(--surface2);
+      border-color: var(--accent-dim);
+    }
+    .card-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+    .card-face.back .card-label { color: var(--accent); }
+    .card-text {
+      font-size: 18px;
+      line-height: 1.55;
+      font-weight: 500;
+    }
+    .card-face.back .card-text {
+      font-size: 16px;
+      color: var(--text);
+    }
+    .card-hint {
+      font-size: 13px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .card-hint-icon { font-size: 16px; }
+
+    /* ── ACTION BUTTONS ── */
+    .action-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s;
+    }
+    .action-row.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .btn {
+      flex: 1;
+      padding: 16px;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: opacity 0.15s, transform 0.1s;
+    }
+    .btn:active { opacity: 0.85; transform: scale(0.97); }
+    .btn-wrong {
+      background: var(--red-dim);
+      color: var(--red);
+      border: 1px solid var(--red);
+    }
+    .btn-right {
+      background: var(--green-dim);
+      color: var(--green);
+      border: 1px solid var(--green);
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+    }
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-full { flex: none; width: 100%; margin-top: 12px; }
+
+    /* ── RESULTS SCREEN ── */
+    #screen-results {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 0;
+    }
+    .results-emoji { font-size: 64px; margin-bottom: 20px; }
+    .results-title { font-size: 26px; font-weight: 700; margin-bottom: 8px; }
+    .results-subtitle { color: var(--text-muted); font-size: 15px; margin-bottom: 36px; }
+    .results-stats {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 36px;
+      width: 100%;
+    }
+    .stat-card {
+      flex: 1;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .stat-number { font-size: 32px; font-weight: 700; }
+    .stat-label { font-size: 12px; color: var(--text-muted); font-weight: 500; }
+    .stat-card.green .stat-number { color: var(--green); }
+    .stat-card.red .stat-number { color: var(--red); }
+    .results-actions { width: 100%; display: flex; flex-direction: column; gap: 10px; }
+
+    /* ── EMPTY STATE ── */
+    .empty-state {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      text-align: center;
+      color: var(--text-muted);
+      padding: 40px 20px;
+    }
+    .empty-state-icon { font-size: 48px; }
+    .empty-state-title { font-size: 18px; font-weight: 600; color: var(--text); }
+    .empty-state-text { font-size: 14px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+<!-- ── TOPIC SELECTION ── -->
+<div id="screen-topics" class="screen active" style="padding-top: 48px;">
+  <div class="app-title">✈️ LAPL Flashcards</div>
+  <div class="app-subtitle">Prüfungsvorbereitung mit Spaced Repetition</div>
+  <h2>Themen</h2>
+  <div id="topic-list" class="topic-list"></div>
+</div>
+
+<!-- ── HEADER (shared) ── -->
+<div id="app-header" class="header" style="display:none;">
+  <div class="header-back" id="btn-back">←</div>
+  <div class="header-title" id="header-title"></div>
+</div>
+
+<!-- ── FLASHCARD ── -->
+<div id="screen-card" class="screen">
+  <div class="progress-row">
+    <span class="progress-label" id="progress-text">0 / 0</span>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+  </div>
+  <div class="remaining-label" id="remaining-label"></div>
+
+  <div class="card-scene" id="card-scene">
+    <div class="card-inner" id="card-inner">
+      <div class="card-face front">
+        <span class="card-label">Frage</span>
+        <div class="card-text" id="card-question"></div>
+        <div class="card-hint"><span class="card-hint-icon">👆</span> Tippen zum Aufdecken</div>
+      </div>
+      <div class="card-face back">
+        <span class="card-label">Antwort</span>
+        <div class="card-text" id="card-answer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="action-row" id="action-row">
+    <button class="btn btn-wrong" id="btn-wrong">✗ Nochmal</button>
+    <button class="btn btn-right" id="btn-right">✓ Gewusst</button>
+  </div>
+</div>
+
+<!-- ── RESULTS ── -->
+<div id="screen-results" class="screen">
+  <div class="results-emoji" id="results-emoji">🎉</div>
+  <div class="results-title" id="results-title">Runde beendet!</div>
+  <div class="results-subtitle" id="results-subtitle"></div>
+  <div class="results-stats">
+    <div class="stat-card green">
+      <div class="stat-number" id="stat-right">0</div>
+      <div class="stat-label">Gewusst</div>
+    </div>
+    <div class="stat-card red">
+      <div class="stat-number" id="stat-wrong">0</div>
+      <div class="stat-label">Nochmal</div>
+    </div>
+  </div>
+  <div class="results-actions">
+    <button class="btn btn-primary btn-full" id="btn-retry" style="display:none;">🔁 Nochmal mit falschen</button>
+    <button class="btn btn-secondary btn-full" id="btn-all-again">🔀 Alle nochmal (gemischt)</button>
+    <button class="btn btn-secondary btn-full" id="btn-topics">📚 Thema wechseln</button>
+  </div>
+</div>
+
+<script>
+// ── CONFIG ──
+const TOPICS = [
+  { id: 'air-law', file: 'data/air-law.json', topic: 'Air Law', emoji: '⚖️' },
+  // Add more topics here as JSON files are created:
+  // { id: 'meteorologie', file: 'data/meteorologie.json', topic: 'Meteorologie', emoji: '🌤️' },
+  // { id: 'navigation', file: 'data/navigation.json', topic: 'Navigation', emoji: '🗺️' },
+];
+
+// ── STATE ──
+let currentTopic = null;
+let deck = [];
+let sessionRight = 0;
+let sessionWrong = 0;
+let cardFlipped = false;
+let sessionAttempts = {}; // cardId -> number of wrong attempts this session
+const MAX_ATTEMPTS = 5;   // Max times a card re-appears before it's skipped
+
+// ── TOPIC DATA CACHE ──
+const topicCache = {}; // topicId -> cards array
+
+// ── STORAGE ──
+function getScores(topicId) {
+  try { return JSON.parse(localStorage.getItem('lapl_' + topicId) || '{}'); } catch { return {}; }
+}
+function saveScore(topicId, cardId, correct) {
+  const scores = getScores(topicId);
+  const prev = scores[cardId] || { score: 0, lastSeen: null };
+  scores[cardId] = {
+    score: correct ? prev.score + 1 : 0,
+    lastSeen: new Date().toISOString().slice(0, 10)
+  };
+  localStorage.setItem('lapl_' + topicId, JSON.stringify(scores));
+}
+function resetScores(topicId) {
+  localStorage.removeItem('lapl_' + topicId);
+}
+function getTopicProgress(topicId, totalCards) {
+  const scores = getScores(topicId);
+  const learned = Object.values(scores).filter(s => s.score >= 3).length;
+  return totalCards > 0 ? Math.round((learned / totalCards) * 100) : 0;
+}
+
+// ── SHUFFLE (Fisher-Yates) ──
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// ── SPACED REPETITION: build deck ──
+// Cards with higher scores appear less frequently
+function buildDeck(cards, topicId) {
+  const scores = getScores(topicId);
+  const weighted = [];
+  for (const card of cards) {
+    const score = (scores[card.id] || {}).score || 0;
+    // score 0-1: always include; score 2: 60%; score 3+: 25%
+    const include = score <= 1 ? true : score === 2 ? Math.random() < 0.6 : Math.random() < 0.25;
+    if (include) weighted.push(card);
+  }
+  // Always include at least 10 cards
+  if (weighted.length < Math.min(10, cards.length)) {
+    return shuffle(cards).slice(0, Math.min(20, cards.length));
+  }
+  return shuffle(weighted);
+}
+
+// ── SCREENS ──
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  const header = document.getElementById('app-header');
+  if (id === 'screen-topics') {
+    header.style.display = 'none';
+  } else {
+    header.style.display = 'flex';
+  }
+}
+
+// ── TOPIC SCREEN ──
+async function renderTopics() {
+  const list = document.getElementById('topic-list');
+  list.innerHTML = '';
+
+  for (const t of TOPICS) {
+    const card = document.createElement('div');
+    card.className = 'topic-card loading';
+    card.innerHTML = `
+      <div class="topic-emoji">${t.emoji}</div>
+      <div class="topic-info">
+        <div class="topic-name">${t.topic}</div>
+        <div class="topic-meta">Lädt...</div>
+        <div class="topic-progress-bar"><div class="topic-progress-fill" style="width:0%"></div></div>
+      </div>
+      <div class="topic-arrow">›</div>
+    `;
+    list.appendChild(card);
+
+    // Load card count + progress async
+    fetch(t.file)
+      .then(r => r.json())
+      .then(data => {
+        const total = data.cards.length;
+        const pct = getTopicProgress(t.id, total);
+        const learned = Object.values(getScores(t.id)).filter(s => s.score >= 3).length;
+        card.className = 'topic-card';
+        card.querySelector('.topic-meta').textContent = `${total} Karten · ${learned} gelernt`;
+        card.querySelector('.topic-progress-fill').style.width = pct + '%';
+        card.dataset.loaded = 'true';
+        card.dataset.total = total;
+        card.onclick = () => startTopic(t, data.cards);
+      })
+      .catch(() => {
+        card.querySelector('.topic-meta').textContent = 'Noch nicht verfügbar';
+        card.querySelector('.topic-emoji').textContent = '🔒';
+      });
+  }
+}
+
+// ── START TOPIC ──
+function startTopic(topic, cards) {
+  currentTopic = topic;
+  topicCache[topic.id] = cards;
+  sessionRight = 0;
+  sessionWrong = 0;
+  sessionAttempts = {};
+  deck = buildDeck(cards, topic.id);
+  document.getElementById('header-title').textContent = topic.emoji + ' ' + topic.topic;
+  showScreen('screen-card');
+  showCard();
+}
+
+// ── SHOW CARD ──
+function showCard() {
+  if (deck.length === 0) {
+    showResults();
+    return;
+  }
+  const card = deck[0];
+  cardFlipped = false;
+  document.getElementById('card-inner').classList.remove('flipped');
+  document.getElementById('action-row').classList.remove('visible');
+  document.getElementById('card-question').textContent = card.question;
+  document.getElementById('card-answer').textContent = card.answer;
+  updateProgress();
+}
+
+// ── UPDATE PROGRESS ──
+function updateProgress() {
+  const done = sessionRight + sessionWrong;
+  const total = done + deck.length;
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+  document.getElementById('progress-text').textContent = done + ' / ' + total;
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('remaining-label').textContent =
+    deck.length + ' Karte' + (deck.length !== 1 ? 'n' : '') + ' verbleibend';
+}
+
+// ── FLIP ──
+document.getElementById('card-scene').addEventListener('click', () => {
+  if (cardFlipped) return;
+  cardFlipped = true;
+  document.getElementById('card-inner').classList.add('flipped');
+  document.getElementById('action-row').classList.add('visible');
+});
+
+// ── ANSWER BUTTONS ──
+document.getElementById('btn-wrong').addEventListener('click', () => {
+  if (!cardFlipped || !currentTopic) return;
+  const card = deck[0];
+  saveScore(currentTopic.id, card.id, false);
+  sessionWrong++;
+  sessionAttempts[card.id] = (sessionAttempts[card.id] || 0) + 1;
+  if (sessionAttempts[card.id] >= MAX_ATTEMPTS) {
+    deck.shift(); // Card shown enough times — remove to prevent infinite loop
+  } else {
+    deck.push(deck.shift()); // Push to end for another try
+  }
+  showCard();
+});
+
+document.getElementById('btn-right').addEventListener('click', () => {
+  if (!cardFlipped || !currentTopic) return;
+  saveScore(currentTopic.id, deck[0].id, true);
+  sessionRight++;
+  deck.shift();
+  showCard();
+});
+
+// ── RESULTS ──
+function showResults() {
+  document.getElementById('stat-right').textContent = sessionRight;
+  document.getElementById('stat-wrong').textContent = sessionWrong;
+  document.getElementById('results-subtitle').textContent =
+    sessionWrong === 0
+      ? 'Perfekte Runde! Alle Karten gewusst.'
+      : sessionWrong + ' Karte' + (sessionWrong !== 1 ? 'n' : '') + ' zum Wiederholen.';
+  document.getElementById('results-emoji').textContent =
+    sessionWrong === 0 ? '🏆' : sessionRight > sessionWrong ? '💪' : '📚';
+  document.getElementById('btn-retry').style.display = sessionWrong > 0 ? 'flex' : 'none';
+  showScreen('screen-results');
+}
+
+async function loadTopicCards(topic) {
+  if (topicCache[topic.id]) return topicCache[topic.id];
+  const data = await fetch(topic.file).then(r => r.json());
+  topicCache[topic.id] = data.cards;
+  return data.cards;
+}
+
+document.getElementById('btn-retry').addEventListener('click', async () => {
+  try {
+    const cards = await loadTopicCards(currentTopic);
+    const scores = getScores(currentTopic.id);
+    const wrongCards = cards.filter(c => (scores[c.id] || {}).score === 0);
+    if (wrongCards.length === 0) { startTopic(currentTopic, cards); return; }
+    sessionRight = 0; sessionWrong = 0; sessionAttempts = {};
+    deck = shuffle(wrongCards);
+    showScreen('screen-card');
+    showCard();
+  } catch {
+    alert('Fehler beim Laden. Bitte Seite neu laden.');
+  }
+});
+
+document.getElementById('btn-all-again').addEventListener('click', async () => {
+  try {
+    const cards = await loadTopicCards(currentTopic);
+    startTopic(currentTopic, cards);
+  } catch {
+    alert('Fehler beim Laden. Bitte Seite neu laden.');
+  }
+});
+
+document.getElementById('btn-topics').addEventListener('click', () => {
+  showScreen('screen-topics');
+  renderTopics();
+});
+
+// ── BACK BUTTON ──
+document.getElementById('btn-back').addEventListener('click', () => {
+  showScreen('screen-topics');
+  renderTopics();
+});
+
+// ── KEYBOARD SHORTCUTS ──
+document.addEventListener('keydown', e => {
+  const screen = document.querySelector('.screen.active');
+  if (!screen || screen.id !== 'screen-card') return;
+  if (e.key === ' ' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    document.getElementById('card-scene').click();
+  } else if ((e.key === '1' || e.key === 'ArrowLeft') && cardFlipped) {
+    document.getElementById('btn-wrong').click();
+  } else if ((e.key === '2' || e.key === 'ArrowRight') && cardFlipped) {
+    document.getElementById('btn-right').click();
+  }
+});
+
+// ── INIT ──
+renderTopics();
+</script>
+</body>
+</html>

@@ -1,0 +1,827 @@
+{
+  "id": "air-law",
+  "topic": "Air Law",
+  "emoji": "⚖️",
+  "cards": [
+    {
+      "id": "al-001",
+      "question": "The objectives of ICAO was ratified by the:",
+      "answer": "Chicago convention 1944"
+    },
+    {
+      "id": "al-002",
+      "question": "The International Civil Aviation Organisation (I.C.A.O.) was established by the international convention of:",
+      "answer": "Chicago"
+    },
+    {
+      "id": "al-003",
+      "question": "The International Civil Aviation Organisation (ICAO) establishes:",
+      "answer": "Standards and recommended international practices for contracting member states. ICAO SARPs are not automatically binding on all states without exception — states may file differences."
+    },
+    {
+      "id": "al-004",
+      "question": "Which of the following is obligating for members of ICAO?",
+      "answer": "ICAO must be informed about differences from the standards in any of the Annexes to the convention. Under Article 38 of the Chicago Convention, contracting states must notify ICAO of any differences between their national regulations and the international standards."
+    },
+    {
+      "id": "al-005",
+      "question": "Which of the following documents must be carried on international flights? (1. Certificate of Registration, 2. Certificate of Airworthiness, 3. Crew Licences, 4. Aircraft Journey Logbook, 5. Aircraft Radio Licence, 6. List of passengers, 7. Cargo manifest, 8. Interception Procedures)",
+      "answer": "1, 2, 3, 4, 5, 6, 8 — Certificate of Registration; Certificate of Airworthiness; Crew Licences; Aircraft Journey Logbook; Aircraft Radio Licence; List of passengers (names, embarkation and destination); and Interception Procedures. Per ICAO Annex 6 / Chicago Convention Article 29."
+    },
+    {
+      "id": "al-006",
+      "question": "The International Civil Aviation Convention Annex containing standards and recommended practices for Personnel Licensing is:",
+      "answer": "Annex 1. ICAO Annex 1 covers Personnel Licensing, including requirements for pilot licences, ratings, and medical certificates."
+    },
+    {
+      "id": "al-007",
+      "question": "According to ICAO Annex 8, a certificate of airworthiness shall be renewed or shall remain valid subject to the:",
+      "answer": "Laws of the State of registry. Under ICAO Annex 8, the Certificate of Airworthiness is issued and remains valid in accordance with the legislation of the state in which the aircraft is registered."
+    },
+    {
+      "id": "al-008",
+      "question": "What is the meaning of the abbreviation 'ARC'?",
+      "answer": "Airworthiness Review Certificate. The ARC is an EASA document confirming that a continuing airworthiness review has been satisfactorily completed; it is required alongside the Certificate of Airworthiness for an aircraft to be legally operated."
+    },
+    {
+      "id": "al-009",
+      "question": "Which documents make an aircraft airworthy?",
+      "answer": "Certificate of Registration; Certificate of Airworthiness; Airworthiness Review Certificate (ARC); Certificate of Release to Service (CRS); Weight and Balance Schedule; Aircraft Technical Log / Log Books; Noise Certificate; Aircraft Flight Manual; Insurance."
+    },
+    {
+      "id": "al-010",
+      "question": "Which of the following statements best describes the requirements of an Airworthiness Directive?",
+      "answer": "Airworthiness directives are mandatory and must be complied with. ADs are issued by the airworthiness authority (e.g., EASA) to correct an unsafe condition in an aircraft type, engine, or component. Compliance is legally required."
+    },
+    {
+      "id": "al-011",
+      "question": "The 'Certificate of Airworthiness' is issued by the state...",
+      "answer": "In which the aircraft is registered. The Certificate of Airworthiness is issued by the civil aviation authority of the state of registry, per ICAO Annex 8."
+    },
+    {
+      "id": "al-012",
+      "question": "What else is required for a Certificate of Airworthiness (C of A) to be valid?",
+      "answer": "Airworthiness Review Certificate (ARC); Certificate of Release to Service (CRS); No unapproved modifications or repairs. All three conditions must be met for the C of A to be considered valid for flight."
+    },
+    {
+      "id": "al-013",
+      "question": "When letters are used for registration mark combinations, which combination shall not be used as it might be confused with urgent signals?",
+      "answer": "TTT. The combination TTT is an urgency signal in radiotelegraphy. ICAO Annex 7 prohibits registration marks that could be confused with distress or urgency signals such as SOS, PAN, MAYDAY, TTT."
+    },
+    {
+      "id": "al-014",
+      "question": "According to Annex 7, the registration mark shall be letters, numbers or a combination of letters and numbers and shall be that assigned by:",
+      "answer": "The state of registry or common mark registering authority. Under ICAO Annex 7, the registration mark is assigned by the state of registry or, in the case of an international operating agency, a common mark registering authority."
+    },
+    {
+      "id": "al-015",
+      "question": "When letters are used for registration mark combinations, which combination shall not be used as it might be confused with urgent signals?",
+      "answer": "PAN. The word PAN (repeated three times: PAN PAN PAN) is the international urgency signal in radiotelephony. Annex 7 prohibits registration marks that resemble urgency or distress signals."
+    },
+    {
+      "id": "al-016",
+      "question": "When letters are used for the registration mark, which combination shall not be used as it might be confused with urgent or distress signals?",
+      "answer": "XXX. The combination XXX is the urgency signal in Morse code (radiotelegraphy). ICAO Annex 7 prohibits registration marks that could be confused with distress or urgency signals."
+    },
+    {
+      "id": "al-017",
+      "question": "The height of the marks under the wings of heavier-than-air aircraft shall be:",
+      "answer": "At least 50 centimetres. Per ICAO Annex 7, registration marks displayed under the wings of heavier-than-air aircraft must have a character height of at least 50 cm."
+    },
+    {
+      "id": "al-018",
+      "question": "The height of the marks on the fuselage (or equivalent structure) and on the vertical tail surfaces of heavier-than-air aircraft shall be:",
+      "answer": "At least 30 centimetres. Per ICAO Annex 7, registration marks on the fuselage and vertical tail surfaces must have a character height of at least 30 cm."
+    },
+    {
+      "id": "al-019",
+      "question": "An aircraft may fly anywhere without displaying its registration — true or false?",
+      "answer": "False. An aircraft must display its registration marks at all times. ICAO Annex 7 requires that all civil aircraft display their nationality and registration marks; there is no provision to fly without them."
+    },
+    {
+      "id": "al-020",
+      "question": "Which of the following Annexes to the Chicago convention contains minimum specifications for a crew licence to have international validity?",
+      "answer": "Annex 1. ICAO Annex 1 (Personnel Licensing) contains the minimum specifications for pilot licences, ratings, and medical certificates required for international validity."
+    },
+    {
+      "id": "al-021",
+      "question": "The minimum age for obtaining a PPL is:",
+      "answer": "17 years. Under ICAO Annex 1 and EASA Part-FCL, the minimum age to be issued a Private Pilot Licence (PPL) is 17 years."
+    },
+    {
+      "id": "al-022",
+      "question": "You may act as a flight instructor to carry out flight instruction for the issue of a PPL:",
+      "answer": "With a valid licence plus flight instructor rating. A flight instructor must hold at least a valid pilot licence appropriate to the instruction being given, plus a Flight Instructor (FI) rating. The licence type must be appropriate for the instruction given."
+    },
+    {
+      "id": "al-023",
+      "question": "The holder of a pilot's licence should inform the Authority of any illness which involves incapacity to undertake licence functions throughout a period of how many days or more?",
+      "answer": "21 days. Under ICAO Annex 1 and EASA Part-MED, a licence holder must inform the authority if they are incapacitated due to illness for 21 days or more consecutively."
+    },
+    {
+      "id": "al-024",
+      "question": "If a licence holder is unable to perform the flight crew functions appropriate to that licence due to illness, the authority must be informed:",
+      "answer": "After 21 days of consecutive illness. The pilot must notify the licensing authority if the incapacitating illness has lasted, or is expected to last, more than 21 consecutive days."
+    },
+    {
+      "id": "al-025",
+      "question": "The duration of the period of currency of a medical assessment shall begin on the date:",
+      "answer": "The medical assessment is issued. Under EASA Part-MED, the validity period of a medical certificate begins from the date the medical assessment (examination) is carried out and the certificate issued."
+    },
+    {
+      "id": "al-026",
+      "question": "The International Civil Aviation Convention Annex containing standards and recommended practices for Personnel Licensing is:",
+      "answer": "Annex 1. ICAO Annex 1 covers all aspects of Personnel Licensing, including pilot licences, ratings, and medical certificate requirements."
+    },
+    {
+      "id": "al-027",
+      "question": "According to PART-MED, licence holders shall seek advice of the authority or AME when becoming aware of hospital or clinic admissions for:",
+      "answer": "Any period. Under EASA Part-MED, a licence holder must without undue delay seek the advice of the authority or an Aeromedical Examiner (AME) upon becoming aware of any hospital or clinic admission for any period whatsoever."
+    },
+    {
+      "id": "al-028",
+      "question": "According to PART-MED, a Class 2 medical certificate for private pilots will be valid for:",
+      "answer": "60 months under the age of 40. Under EASA Part-MED, a Class 2 medical certificate is valid for 60 months for holders under 40 years of age, and 24 months for those 40 years of age and older."
+    },
+    {
+      "id": "al-029",
+      "question": "According to PART-FCL, single pilot single-engine class ratings are valid for:",
+      "answer": "Two years. Under EASA Part-FCL, single-pilot single-engine class ratings (SEP and TMG) are valid for a period of 2 years."
+    },
+    {
+      "id": "al-030",
+      "question": "According to PART-FCL, Medical certificate classes are:",
+      "answer": "Class 1, 2 and 3. Under EASA Part-MED, there are three classes of medical certificate: Class 1 (for commercial pilots), Class 2 (for private pilots), and Class 3 (for air traffic controllers). LAPL pilots may also hold a LAPL medical certificate (sometimes counted separately)."
+    },
+    {
+      "id": "al-031",
+      "question": "Avoidance of collisions — the highest priority for landing has:",
+      "answer": "An aircraft that is compelled to land (Emergency landing). Under ICAO Annex 2 Rules of the Air, an aircraft in distress or compelled to land takes the highest priority over all other traffic."
+    },
+    {
+      "id": "al-032",
+      "question": "The VMC minima for an airspace classified as 'B' above 10000' MSL are:",
+      "answer": "1500 m horizontally and 1000 ft vertically from clouds; 8 km visibility. In Class B airspace above 3050 m (10,000 ft) AMSL, ICAO Annex 2 VMC minima are: 8 km flight visibility, 1500 m horizontal distance from cloud, and 1000 ft vertical distance from cloud."
+    },
+    {
+      "id": "al-033",
+      "question": "Above an altitude of 10000 ft, flights operating within airspace Class 'G' in accordance with VFR shall observe the following weather minima:",
+      "answer": "Distance from cloud: 1500 m horizontally, 1000 ft vertically; flight visibility: 8 km. In Class G airspace above 3050 m (10,000 ft) AMSL, ICAO VMC minima require 8 km visibility, 1500 m horizontal and 1000 ft vertical distance from cloud."
+    },
+    {
+      "id": "al-034",
+      "question": "Interception (DAY or NIGHT) — which manoeuvre will be executed by an intercepting aircraft to communicate 'YOU MAY PROCEED'?",
+      "answer": "An abrupt break-away manoeuvre from the intercepted aircraft consisting of a climbing turn of 90 degrees or more without crossing the line of flight of the intercepted aircraft. This is the standard ICAO visual signal from interceptor to intercepted aircraft meaning 'You may proceed'."
+    },
+    {
+      "id": "al-035",
+      "question": "Which action shall be taken by an aircraft in the traffic pattern of an aerodrome, experiencing radio failure to indicate difficulties which compel it to land without requiring immediate assistance?",
+      "answer": "The repeated switching on and off of the landing lights. Per ICAO Annex 2, an aircraft experiencing radio failure that is compelled to land without requiring immediate assistance indicates this by repeatedly switching its landing lights on and off."
+    },
+    {
+      "id": "al-036",
+      "question": "If radio contact with the intercepting aircraft is established but communication on a common language is not possible, which phrase should the intercepted aircraft use to communicate that it is unable to comply with instructions received?",
+      "answer": "UNABLE TO COMPLY. This is the standard ICAO radiotelephony phrase for an intercepted aircraft to indicate it cannot follow the instructions given by the intercepting aircraft."
+    },
+    {
+      "id": "al-037",
+      "question": "A flashing red light from control tower during an approach to land means:",
+      "answer": "Airport is unsafe, do not land. Per ICAO Annex 2, a flashing red light signal directed at an aircraft in flight means 'Aerodrome unsafe — do not land'."
+    },
+    {
+      "id": "al-038",
+      "question": "On aerodromes, aircraft taxiing on the manoeuvring area of an aerodrome shall give way to:",
+      "answer": "Aircraft taking off or about to take off. Under ICAO Annex 2, taxiing aircraft must give way to aircraft that are taking off or about to take off. Aircraft on approach to land also have priority."
+    },
+    {
+      "id": "al-039",
+      "question": "Unless otherwise prescribed, what is the rule regarding the level to be maintained by an aircraft flying IFR outside controlled airspace?",
+      "answer": "1000 feet above the highest obstacle within 8 nautical miles of the estimated position of the aircraft. Per ICAO Annex 2, IFR flights outside controlled airspace must maintain at least 1000 ft above the highest obstacle within 8 NM of the estimated position."
+    },
+    {
+      "id": "al-040",
+      "question": "Aircraft 'A' with an ATC clearance is flying in VMC conditions within a control area. Aircraft 'B' with no ATC clearance is approaching at approximately the same altitude and on a converging course. Which has the right of way?",
+      "answer": "Aircraft 'B' regardless of the direction 'A' is approaching. Under ICAO Annex 2, when two aircraft are converging, the aircraft to the right has right of way. However, an aircraft without an ATC clearance does not automatically yield to one with a clearance — standard visual right-of-way rules apply based on geometry. The aircraft that has the other on its right must give way."
+    },
+    {
+      "id": "al-041",
+      "question": "Which of the following actions shall be taken in case a controlled flight deviates from the track?",
+      "answer": "Adjust the heading of the aircraft to regain track as soon as practicable. Per ICAO Annex 2, a pilot whose controlled flight deviates from track shall make an immediate adjustment to regain track as soon as practicable."
+    },
+    {
+      "id": "al-042",
+      "question": "While on IFR flight, a pilot has an emergency which causes a deviation from an ATC clearance. What action must be taken?",
+      "answer": "The appropriate ATC unit shall be notified of the action taken as soon as circumstances permit. Under ICAO Annex 2, in an emergency requiring deviation from ATC clearance, the pilot must advise the relevant ATC unit of the deviation as soon as possible."
+    },
+    {
+      "id": "al-043",
+      "question": "A signalman will ask the pilot to apply parking brakes by the following signals:",
+      "answer": "Raise arm and hand with fingers extended horizontally in front of body, then clench fist. This is the standard ICAO marshalling signal for 'Apply parking brakes'."
+    },
+    {
+      "id": "al-044",
+      "question": "An aircraft is flying under IFR in an area where visibility is unlimited and sky is clear, when it totally loses radio communications. The procedure to be followed is:",
+      "answer": "Continue flight onto destination, complying with last received clearances then with the filed flight plan. Under ICAO Annex 2, when radio communication is lost in VMC, the aircraft continues the flight under VMC conditions and follows the last clearance received, then the filed flight plan."
+    },
+    {
+      "id": "al-045",
+      "question": "A red flare addressed to a flying aircraft means:",
+      "answer": "Not withstanding any previous instructions, do not land for the time being. A red flare fired at an aircraft in flight is a signal that the aircraft must not land regardless of any previous clearance or instruction received."
+    },
+    {
+      "id": "al-046",
+      "question": "A double white cross displayed horizontally in the signal area indicates that:",
+      "answer": "The aerodrome is being used by gliders and that glider flights are being performed. Per ICAO Annex 2, a double white cross in the signal square indicates gliding operations are in progress at the aerodrome."
+    },
+    {
+      "id": "al-047",
+      "question": "An aircraft is considered to overtake another if it approaches the other aircraft from the rear on a line forming an angle of less than:",
+      "answer": "70 degrees with the plane of symmetry of the latter. Per ICAO Annex 2, an overtaking aircraft is one that approaches from behind within a cone of 70 degrees either side of the overtaken aircraft's plane of symmetry."
+    },
+    {
+      "id": "al-048",
+      "question": "VMC minima for VFR flights in Class B airspace, above 3050 m (10000') MSL are:",
+      "answer": "8 km visibility, 1500 m horizontal and 1000 ft vertical distance from clouds. Per ICAO Annex 2 Table 3-1, Class B airspace above 3050 m (10,000 ft) AMSL requires 8 km visibility and 1500 m / 1000 ft cloud separation."
+    },
+    {
+      "id": "al-049",
+      "question": "An aircraft shall display, if so equipped, an anti-collision light:",
+      "answer": "On the ground when the engines are running. Under ICAO Annex 2, anti-collision lights (beacon/strobe) shall be displayed whenever the engines are running, both on the ground and in flight."
+    },
+    {
+      "id": "al-050",
+      "question": "The white dumb-bell with black perpendicular bar indicates that:",
+      "answer": "Landing, take-off and taxiing is allowed on runway and/or taxiway only. Per ICAO Annex 2, the white dumbbell with black bars means movements are restricted to hard surfaces (runways and taxiways) only."
+    },
+    {
+      "id": "al-051",
+      "question": "Interception — if any instructions received by radio from any sources conflict with those given by the intercepting aircraft by visual signals, the intercepted aircraft shall:",
+      "answer": "Follow the instructions of the intercepting aircraft and request immediate clarification. Per ICAO Annex 2, when there is a conflict between radio instructions and visual signals from an intercepting aircraft, the intercepted aircraft must comply with the visual signals and seek clarification immediately."
+    },
+    {
+      "id": "al-052",
+      "question": "An aircraft manoeuvring in an airport's circuit receives a series of red flashes from the control tower. This signifies that the aircraft must:",
+      "answer": "Not land for the moment regardless of previous instructions. A series of red flashes directed at an aircraft in the circuit means 'Do not land — aerodrome not available for landing at this time'."
+    },
+    {
+      "id": "al-053",
+      "question": "While taxiing, an aircraft receives the following light signal from the control tower: series of red flashes. This signal means that the aircraft:",
+      "answer": "Must return to its point of departure (starting point on the aerodrome). A series of red flashes directed at a taxiing aircraft means 'Stop and return to your starting point on the aerodrome'."
+    },
+    {
+      "id": "al-054",
+      "question": "While taxiing, an aircraft receives from the airport controller the following light signal: a series of green flashes. This signal means that the aircraft:",
+      "answer": "May continue to taxi towards the take-off area. A series of green flashes directed at a taxiing aircraft means 'Cleared to taxi' or 'Proceed to the take-off area'."
+    },
+    {
+      "id": "al-055",
+      "question": "The Transition Level is defined as:",
+      "answer": "The lowest flight level available for use above the transition altitude. The Transition Level is the lowest Flight Level at or above the Transition Altitude. Aircraft climbing through the Transition Layer change from QNH to standard pressure (1013.25 hPa) when passing through the Transition Level."
+    },
+    {
+      "id": "al-056",
+      "question": "The transition level will be passed to aircraft by:",
+      "answer": "ATS units. The Transition Level is determined for each flight or period by the ATS (Air Traffic Services) unit and communicated to pilots via ATIS or radio, as it can vary with changes in QNH."
+    },
+    {
+      "id": "al-057",
+      "question": "Aeronautical charts show the elevation of terrain and obstacles. What pressure setting allows pilots to use this information for separation?",
+      "answer": "QNH will display the vertical distance above mean sea level. When QNH is set on the altimeter sub-scale, the altimeter reads altitude above mean sea level (MSL), which corresponds to the elevations shown on aeronautical charts."
+    },
+    {
+      "id": "al-058",
+      "question": "During a flight at FL 80, the altimeter setting has to be:",
+      "answer": "1013.25 hPa (standard pressure). When flying at a Flight Level, the altimeter must be set to standard pressure (1013.25 hPa / 29.92 inHg). Flight Levels are defined as pressure altitudes referenced to standard pressure."
+    },
+    {
+      "id": "al-059",
+      "question": "An aircraft is flying a magnetic heading of 005°, which includes a 6° drift offset to the right under IFR. Which is a correct Flight Level to fly?",
+      "answer": "FL55. The actual track is 005° − 6° = 359°, i.e., roughly northbound (360°). For IFR flights in ICAO semi-circular cruising levels, northbound (000°–179°) odd thousands: FL50, FL70, FL90, etc. However, with a heading of 005° (northeast sector), the correct odd Flight Level is FL55 (odd hundreds for the applicable band in some regions). Per ICAO Annex 2 semi-circular rule, northbound IFR flights fly odd Flight Levels, so FL55 applies."
+    },
+    {
+      "id": "al-060",
+      "question": "An aircraft equipped with SSR transponder which is intercepted by another aircraft shall immediately select Mode A Code:",
+      "answer": "Code 7700. When intercepted, an aircraft shall immediately select Mode A Code 7700 (Emergency/Distress) unless otherwise instructed by the appropriate ATC unit. Per ICAO Annex 2."
+    },
+    {
+      "id": "al-061",
+      "question": "When an aircraft carries a serviceable transponder, the pilot shall operate the transponder:",
+      "answer": "At all times during flight, regardless of whether the aircraft is within or outside airspace where SSR is used for ATS purposes. ICAO Annex 10 and Annex 2 require the transponder to be operated at all times when airborne."
+    },
+    {
+      "id": "al-062",
+      "question": "When the aircraft carries a serviceable Mode C transponder, the pilot shall continuously operate this mode:",
+      "answer": "Unless otherwise directed by ATC. Mode C (altitude reporting) shall be continuously operated during flight unless ATC instructs otherwise. The pilot cannot switch it off arbitrarily."
+    },
+    {
+      "id": "al-063",
+      "question": "When an aircraft is subjected to unlawful interference, the pilot-in-command shall indicate the situation by setting the transponder to Mode A, Code:",
+      "answer": "7500. Transponder Code 7500 is the internationally recognised code for unlawful interference / hijacking. It silently alerts ATC without the crew needing to make a radio call."
+    },
+    {
+      "id": "al-064",
+      "question": "Pilots shall not SQUAWK IDENT unless they:",
+      "answer": "Are requested by ATC. The IDENT function on the transponder shall only be activated when specifically requested by ATC — never spontaneously by the pilot."
+    },
+    {
+      "id": "al-065",
+      "question": "When acknowledging mode / code setting instructions, pilots shall:",
+      "answer": "Read back the mode and code to be set. Per ICAO radiotelephony procedures, when ATC assigns a transponder mode and code, the pilot must read back both the mode and the code to confirm correct setting."
+    },
+    {
+      "id": "al-066",
+      "question": "ATC has assigned you the transponder code 5320. In case of losing two-way radio communication, you have to squawk:",
+      "answer": "Mode A Code 7600. Code 7600 is the internationally recognised SSR code for radio communication failure (NORDO). When two-way communication is lost, the pilot must squawk 7600 regardless of any previously assigned code."
+    },
+    {
+      "id": "al-067",
+      "question": "Where a Secondary Surveillance Radar (SSR) is not available, radar identification may be achieved by:",
+      "answer": "Instructing the pilot to execute one or more changes of 30° or more. Without SSR, primary radar identification is established by instructing the aircraft to turn 30° or more and observing the corresponding target movement on the radar display."
+    },
+    {
+      "id": "al-068",
+      "question": "Which code shall be used on Mode 'A' to provide recognition of an aircraft subjected to unlawful interference?",
+      "answer": "Code 7500. Mode A Code 7500 is the designated code for aircraft subject to unlawful interference (hijacking), per ICAO Annex 10."
+    },
+    {
+      "id": "al-069",
+      "question": "Which of the following correctly lists special purpose codes to be used in conjunction with Secondary Surveillance Radar (SSR)?",
+      "answer": "Distress 7700; Hijacking 7500; Communication failure 7600. The three universally recognised SSR emergency codes are: 7700 = Emergency/Distress, 7500 = Unlawful interference/Hijack, 7600 = Radio communication failure."
+    },
+    {
+      "id": "al-070",
+      "question": "An Air Traffic Control Unit regarding call sign changes:",
+      "answer": "May ask an aircraft to temporarily change its call sign for safety reasons when there is a risk of confusion between two or more similar call signs. ATC can request a temporary call sign change to prevent confusion, but only for safety reasons."
+    },
+    {
+      "id": "al-071",
+      "question": "The primary duty provided by a radar unit is:",
+      "answer": "To provide radar separation. The primary purpose of a radar unit is to provide separation services to aircraft using radar-derived position information."
+    },
+    {
+      "id": "al-072",
+      "question": "Flight Information Region (FIR) is an airspace within which the following services are provided:",
+      "answer": "Flight Information Service and Alerting Service. A FIR provides two services: Flight Information Service (FIS) and Alerting Service (ALRS), per ICAO Annex 11."
+    },
+    {
+      "id": "al-073",
+      "question": "Control Area (CTA) is defined as:",
+      "answer": "A controlled airspace extending upwards from a specified limit above the Earth. A Control Area (CTA) does not start at the surface — it begins from a designated altitude above the Earth and extends upward to a specified upper limit."
+    },
+    {
+      "id": "al-074",
+      "question": "A Control Zone shall extend laterally to at least:",
+      "answer": "5 nautical miles from the centre of the aerodrome or aerodromes concerned in the direction from which approaches may be made. Per ICAO Annex 11, a CTR has a minimum lateral radius of 5 NM from the centre of the aerodrome."
+    },
+    {
+      "id": "al-075",
+      "question": "The units providing Air Traffic Services are:",
+      "answer": "Area Control Centre; Flight Information Centre; Approach Control Office; Aerodrome Control Tower; and Air Traffic Services Reporting Office. Per ICAO Annex 11, these five unit types collectively provide ATS."
+    },
+    {
+      "id": "al-076",
+      "question": "Regarding Aerodrome Flight Information Service (AFIS):",
+      "answer": "It can only supply limited services to the users and under no circumstances may it supply ATC services. AFIS is not an ATC service — it provides information only (traffic information, weather, etc.) but does not issue clearances or instructions."
+    },
+    {
+      "id": "al-077",
+      "question": "The Alerting Service is provided by:",
+      "answer": "The ATS unit responsible for the aircraft at that moment. Per ICAO Annex 11, the alerting service is provided by whatever ATS unit has responsibility for the aircraft at the time the emergency or uncertainty arises."
+    },
+    {
+      "id": "al-078",
+      "question": "The phases related to an aircraft in emergency or believed in emergency are:",
+      "answer": "Uncertainty phase, alert phase, distress phase. These are the three emergency phases defined in ICAO Annex 12: INCERFA (uncertainty), ALERFA (alert), and DETRESFA (distress)."
+    },
+    {
+      "id": "al-079",
+      "question": "Which of the following Annexes to the Chicago convention contains international standards and recommended practices for air traffic services (ATS)?",
+      "answer": "Annex 11. ICAO Annex 11 covers Air Traffic Services, including the establishment and operation of ATC, Flight Information Service, and Alerting Service."
+    },
+    {
+      "id": "al-080",
+      "question": "Alert phase is defined as:",
+      "answer": "A situation where an apprehension exists as to the safety of an aircraft and its occupants. The alert phase (ALERFA) is declared when there is apprehension about the safety of an aircraft, typically after communication is not restored within expected times."
+    },
+    {
+      "id": "al-081",
+      "question": "A radio communications 'Distress' differs from 'Urgency' because in the first case:",
+      "answer": "There is a serious and imminent danger requiring immediate assistance. Distress (MAYDAY) is reserved for situations of grave and imminent danger requiring immediate assistance. Urgency (PAN PAN) concerns a serious condition but not one requiring immediate assistance."
+    },
+    {
+      "id": "al-082",
+      "question": "When it becomes apparent that an aircraft is in difficulty, the decision to initiate the alert phases is the responsibility of the:",
+      "answer": "Flight information or control organisations. Per ICAO Annex 12, ATS units (flight information or control organisations) are responsible for initiating the appropriate emergency phase when an aircraft appears to be in difficulty."
+    },
+    {
+      "id": "al-083",
+      "question": "Clearances will be issued by an ATC unit for the purpose of:",
+      "answer": "Achieving separation between controlled flights. ATC clearances are issued specifically to achieve safe separation between controlled flights. They are not a guarantee of separation from uncontrolled traffic."
+    },
+    {
+      "id": "al-084",
+      "question": "When are ATIS broadcasts updated?",
+      "answer": "The ATIS is updated immediately when a significant change occurs. Per ICAO Annex 11, the ATIS message must be updated without delay whenever a significant change in any of the reported elements occurs."
+    },
+    {
+      "id": "al-085",
+      "question": "Air traffic control service is provided for the purpose of:",
+      "answer": "Preventing collisions between aircraft, between aircraft and obstacles on the manoeuvring area, and expediting and maintaining an orderly flow of air traffic. This is the full ICAO Annex 11 definition of the purpose of ATC service."
+    },
+    {
+      "id": "al-086",
+      "question": "Area Control Centres issue clearances for the purpose of:",
+      "answer": "Achieving separation between controlled flights. ACC clearances are specifically issued to maintain separation between IFR and, where applicable, VFR controlled flights."
+    },
+    {
+      "id": "al-087",
+      "question": "Which condition is required so that an aerodrome may be considered controlled?",
+      "answer": "The aerodrome shall be located within a Control Zone (CTR) and provided with a Control Tower. An aerodrome is considered a controlled aerodrome when it is located within a CTR and has an active aerodrome control tower providing ATC service."
+    },
+    {
+      "id": "al-088",
+      "question": "Air Traffic Service unit means:",
+      "answer": "Air Traffic Control units, Flight Information Centres or Air Traffic Services reporting offices. The term 'ATS unit' is a collective term covering all three unit types as defined in ICAO Annex 11."
+    },
+    {
+      "id": "al-089",
+      "question": "Aerodrome traffic is:",
+      "answer": "All traffic on the movement area and all aircraft flying in the vicinity of an aerodrome. Per ICAO Annex 2, aerodrome traffic includes all aircraft operating on the movement area of the aerodrome and all aircraft flying in the aerodrome traffic zone."
+    },
+    {
+      "id": "al-090",
+      "question": "ATS airspace where IFR and VFR flights are permitted, all flights are subject to air traffic control service and are separated from each other, is classified as:",
+      "answer": "Class B. In Class B airspace, both IFR and VFR flights are permitted, all are subject to ATC, and all receive separation from each other."
+    },
+    {
+      "id": "al-091",
+      "question": "Flight information service provided to flights shall include the provision of information concerning collision hazards to aircraft operating in airspace classes:",
+      "answer": "F and G. In uncontrolled airspace (Class F and G), ATS units provide flight information service which includes collision hazard information, since no separation is provided."
+    },
+    {
+      "id": "al-092",
+      "question": "The VMC minima for a VFR flight inside an ATS airspace classified as B is:",
+      "answer": "8 km visibility when at or above 3050 m (10,000 ft) AMSL and clear of clouds. In Class B airspace above FL100, VMC minima are: 8 km visibility and clear of clouds. Below FL100, it is 5 km visibility and clear of clouds."
+    },
+    {
+      "id": "al-093",
+      "question": "A VFR flight in Class B airspace has to maintain the following minima of flight visibility and distance from clouds (below 3050 m / 10000 ft AMSL):",
+      "answer": "5 km below 3050 m (10,000 ft) AMSL and clear of clouds. In Class B airspace below FL100, VMC requires 5 km flight visibility and the aircraft must remain clear of clouds."
+    },
+    {
+      "id": "al-094",
+      "question": "A VFR flight in Class C airspace at or above 3050 m (10,000 ft) AMSL must maintain the following minima of flight visibility and distance from clouds:",
+      "answer": "8 km visibility at or above 3050 m (10,000 ft) AMSL, 1500 m horizontal and 1000 ft vertical distance from clouds. Per ICAO Annex 2, Class C airspace above FL100 requires 8 km visibility and standard cloud separation."
+    },
+    {
+      "id": "al-095",
+      "question": "ATS airspace (Class C) where IFR and VFR flights are permitted, all are subject to ATC, IFR flights are separated from IFR and VFR flights, VFR flights are separated from IFR flights and receive traffic information on other VFR flights, is classified as:",
+      "answer": "Airspace C. In Class C airspace, IFR/IFR and IFR/VFR separation is provided; VFR flights receive traffic information on other VFR flights but are only separated from IFR traffic."
+    },
+    {
+      "id": "al-096",
+      "question": "ATS airspace where IFR and VFR flights are permitted, all flights are subject to ATC and are separated from each other, is classified as:",
+      "answer": "Airspace B. Class B provides full separation to all flights (IFR and VFR from each other)."
+    },
+    {
+      "id": "al-097",
+      "question": "ATS airspace where IFR and VFR flights are permitted, all are subject to ATC, IFR flights are separated from other IFR flights and receive traffic information on VFR flights, VFR flights receive traffic information on all other flights, is classified as:",
+      "answer": "Airspace D. In Class D, IFR/IFR separation is provided; IFR flights receive traffic info on VFR; VFR flights receive traffic info on all other flights but receive no separation."
+    },
+    {
+      "id": "al-098",
+      "question": "ATS airspace where IFR and VFR are permitted, IFR flights are subject to ATC and are separated from other IFR flights, all flights receive traffic information as far as is practical, is classified as:",
+      "answer": "Airspace E. In Class E, IFR/IFR separation is provided; VFR flights are not subject to ATC but all traffic receives information as far as practical."
+    },
+    {
+      "id": "al-099",
+      "question": "ATS airspace where IFR and VFR flights are permitted, all participating IFR flights receive an air traffic advisory service and all flights receive flight information service if requested, is classified as:",
+      "answer": "Airspace F. Class F airspace provides an advisory service to IFR flights (but not full ATC separation) and FIS to all on request."
+    },
+    {
+      "id": "al-100",
+      "question": "ATS airspace where IFR and VFR are permitted and receive flight information service if requested, is classified as:",
+      "answer": "Airspace G. Class G is uncontrolled airspace where no ATC service is provided; flights may receive flight information service (FIS) if requested."
+    },
+    {
+      "id": "al-101",
+      "question": "The ATIS broadcast message should, whenever practicable, not exceed:",
+      "answer": "1 minute. Per ICAO Annex 11, the ATIS broadcast should be kept as concise as possible and should not exceed 1 minute in duration."
+    },
+    {
+      "id": "al-102",
+      "question": "Whenever ATIS is provided, the preparation and dissemination of the ATIS message shall be the responsibility of:",
+      "answer": "The unit as prescribed by the state. Per ICAO Annex 11, responsibility for preparing and disseminating ATIS is assigned to a specific unit as prescribed by the competent authority of each state."
+    },
+    {
+      "id": "al-103",
+      "question": "Flight Information Service shall be provided to aircraft in order to avoid collision hazards when operating in airspace classes:",
+      "answer": "C, D, E, F, and G. FIS including collision hazard information is provided in Classes C through G. In Class A and B, full ATC separation eliminates the need for pilots to self-separate."
+    },
+    {
+      "id": "al-104",
+      "question": "A complete position report transmitted by radiotelephony shall contain the following elements of information in the order listed (per ICAO Doc 4444):",
+      "answer": "1) Aircraft identification, 2) position, 3) time, 4) flight level or altitude, 5) next position and time over, 6) ensuing significant point. This is the standard order for a complete voice position report per ICAO PANS-ATM Doc 4444."
+    },
+    {
+      "id": "al-105",
+      "question": "In the event of a delay of a controlled flight, the submitted flight plan should be amended or cancelled and a new flight plan submitted when the delay is in excess of:",
+      "answer": "30 minutes of the estimated time off blocks. For controlled flights, if departure will be delayed by more than 30 minutes from the estimated off-block time, the flight plan must be amended or cancelled and a new one submitted."
+    },
+    {
+      "id": "al-106",
+      "question": "In the event of a delay for an uncontrolled flight for which a flight plan has been submitted, the flight plan should be amended or a new one submitted when the delay is exceeding the original:",
+      "answer": "Estimated departure time by 30 minutes. For uncontrolled flights, if the actual departure will exceed the filed estimated departure time by more than 30 minutes, the flight plan must be amended or a new one submitted."
+    },
+    {
+      "id": "al-107",
+      "question": "If an ATC clearance is not suitable to the pilot-in-command of an aircraft:",
+      "answer": "The PIC may request and, if practicable, obtain an amended clearance. Under ICAO Annex 2, a pilot may request an amended clearance if the original is not suitable, but ATC grants it only if operationally practicable."
+    },
+    {
+      "id": "al-108",
+      "question": "What are the controlled traffic separation methods applied by ATC?",
+      "answer": "Vertical and horizontal separation. Per ICAO Annex 11, the two fundamental separation methods applied by ATC are vertical separation (different altitudes/flight levels) and horizontal separation (lateral or longitudinal distance)."
+    },
+    {
+      "id": "al-109",
+      "question": "When radar identification of aircraft has been achieved, ATC unit shall:",
+      "answer": "Inform the aircraft prior to issuing any instructions or advice based on the use of radar. ATC must inform the pilot that radar identification has been established before issuing radar-based instructions."
+    },
+    {
+      "id": "al-110",
+      "question": "Which of the following statements regarding aerodrome control service is correct?",
+      "answer": "The aerodrome control service is a service provided for the purpose of preventing collisions between aircraft on the movement area. Aerodrome control (TWR) prevents collisions on the movement area and ensures orderly flow in the traffic circuit."
+    },
+    {
+      "id": "al-111",
+      "question": "During a 'Visual Approach' in Controlled Airspace (Class C), which statement is correct?",
+      "answer": "The pilot must apply separation with other traffic. During a visual approach, the pilot accepts responsibility for maintaining own separation from other traffic — ATC does not apply separation during visual approaches."
+    },
+    {
+      "id": "al-112",
+      "question": "What is meant when departure control instructs you to 'resume own navigation' after you have been vectored to an airway?",
+      "answer": "You should maintain that airway by use of your navigation equipment. 'Resume own navigation' means the pilot should now navigate independently using onboard navigation aids, following the assigned route/airway."
+    },
+    {
+      "id": "al-113",
+      "question": "Which does ATC Term 'Radar contact' signify?",
+      "answer": "Your aircraft has been identified on the radar display and radar flight instructions will be provided until radar identification is terminated. 'Radar contact' means the controller has positively identified the aircraft on radar and will provide radar services."
+    },
+    {
+      "id": "al-114",
+      "question": "The runway edge lights shall be:",
+      "answer": "White. Per ICAO Annex 14, runway edge lights are fixed lights showing white (or variable white/yellow towards the landing threshold area and red for the last 600 m of runway)."
+    },
+    {
+      "id": "al-115",
+      "question": "High intensity obstacle lights should be:",
+      "answer": "Flashing white. Per ICAO Annex 14, high-intensity obstacle lights (for tall structures) shall be flashing white lights with high intensity."
+    },
+    {
+      "id": "al-116",
+      "question": "Low intensity obstacle lights on fixed objects shall be:",
+      "answer": "Fixed red. Per ICAO Annex 14, low-intensity obstacle lights on fixed objects (such as towers, masts, buildings) must be fixed red lights."
+    },
+    {
+      "id": "al-117",
+      "question": "Aerodrome signs should be in the following configuration:",
+      "answer": "Mandatory instruction signs: red background with white inscriptions. Information signs: yellow or black background with black or yellow inscriptions. Per ICAO Annex 14, mandatory signs (runway hold, no entry) have red backgrounds with white text; information signs have yellow backgrounds."
+    },
+    {
+      "id": "al-118",
+      "question": "Which of the following Annexes to the Chicago convention contains minimum specifications for the design of aerodromes?",
+      "answer": "Annex 14. ICAO Annex 14 (Aerodromes) contains the standards and recommended practices for the physical characteristics, obstacle restriction, visual aids, and equipment of aerodromes."
+    },
+    {
+      "id": "al-119",
+      "question": "Low intensity obstacle lights on mobile objects shall be:",
+      "answer": "Flashing red or preferably yellow. Per ICAO Annex 14, low-intensity obstacle lights on mobile objects (vehicles, equipment on the airfield) shall be flashing red or, preferably, flashing yellow/amber."
+    },
+    {
+      "id": "al-120",
+      "question": "The light shown by an 'Aerodrome Identification Beacon' at a land aerodrome shall be:",
+      "answer": "White and green colour identification given by Morse Code. A civil land aerodrome identification beacon displays alternating white and green flashes in Morse code to identify the aerodrome."
+    },
+    {
+      "id": "al-121",
+      "question": "Runway threshold identification lights, when provided, should be:",
+      "answer": "Flashing white. Per ICAO Annex 14, runway threshold identification lights (RTILs) are flashing white lights positioned on either side of the threshold to aid pilots in identifying it."
+    },
+    {
+      "id": "al-122",
+      "question": "Runway edge lights except in the case of a displaced threshold shall be:",
+      "answer": "Fixed lights showing variable white (white changing to yellow in the last portion, and red at the runway end). Per ICAO Annex 14, runway edge lights are white, transitioning to yellow in the last 600 m or last third of the runway, whichever is less."
+    },
+    {
+      "id": "al-123",
+      "question": "In the case of parallel runways, each runway designation number shall be supplemented:",
+      "answer": "By a letter — for example 2 parallel runways: 'L' and 'R' — for 3 parallel runways: 'L', 'C' and 'R'. ICAO Annex 14 requires parallel runways to be distinguished by the suffixes L (Left), R (Right), and C (Centre) for three parallel runways."
+    },
+    {
+      "id": "al-124",
+      "question": "The 'PAPI' shall consist of:",
+      "answer": "A wing bar of 4 sharp transition multi-lamp or paired units equally spaced. The PAPI (Precision Approach Path Indicator) consists of a single wing bar of 4 light units, all on the same side of the runway."
+    },
+    {
+      "id": "al-125",
+      "question": "Taxiway centre line lights other than an exit taxiway shall be:",
+      "answer": "Fixed lights showing green. Per ICAO Annex 14, taxiway centreline lights are fixed green lights, except for runway exit taxiways and rapid exit taxiways which may have specific colours."
+    },
+    {
+      "id": "al-126",
+      "question": "How many red lights must a pilot see whose aircraft, in final approach, is following a normal glide path defined by a PAPI?",
+      "answer": "2 red lights. On a PAPI, the correct glide path is indicated by 2 white lights (outer units) and 2 red lights (inner units nearest the runway). Seeing 2 red and 2 white means on-slope."
+    },
+    {
+      "id": "al-127",
+      "question": "'ASDA' (Acceleration Stop Distance Available) is:",
+      "answer": "The length of the take-off run available plus the length of stopway (if stopway provided). ASDA is the distance available to accelerate and then stop an aircraft safely in case of an abandoned take-off."
+    },
+    {
+      "id": "al-128",
+      "question": "The STOPWAY is a defined rectangular area on the ground at the end of take-off run available, prepared as a suitable area where:",
+      "answer": "An aircraft can be stopped in the case of an abandoned take-off. The stopway is designed to support an aircraft that aborts take-off, allowing it to stop safely beyond the TORA. It is not suitable for landing."
+    },
+    {
+      "id": "al-129",
+      "question": "'Clearway' is defined as a rectangular area established to:",
+      "answer": "Permit aircraft to make a portion of its initial climb to a specific height. The clearway is a defined area beyond the end of the runway over which an aircraft may make its initial climb to a prescribed height."
+    },
+    {
+      "id": "al-130",
+      "question": "'TODA' (take-off distance available) is:",
+      "answer": "The length of the take-off run available plus the length of clearway available (if provided). TODA = TORA + clearway (if any). It represents the total distance available for the aircraft to achieve a specified height."
+    },
+    {
+      "id": "al-131",
+      "question": "In the 'PAPI' system, the pilot during an approach will see the two units nearest the runway as red and the two units farthest from the runway as white when:",
+      "answer": "On or close to the correct approach slope. Two red (inner) and two white (outer) lights on the PAPI indicate the aircraft is on or very close to the correct glide path."
+    },
+    {
+      "id": "al-132",
+      "question": "In the 'VASIS', how many light units are in each wing bar?",
+      "answer": "3 light units in each wing bar. The standard VASIS (Visual Approach Slope Indicator System) has two wing bars each containing 3 light units (a total of 6 units)."
+    },
+    {
+      "id": "al-133",
+      "question": "Runway end lights shall be:",
+      "answer": "Fixed unidirectional lights showing red in the direction of the runway. Runway end lights are fixed red lights facing towards the runway (i.e., visible to an aircraft landing — indicating the end of the runway)."
+    },
+    {
+      "id": "al-134",
+      "question": "Taxiway edge lights shall be:",
+      "answer": "Fixed showing blue. Per ICAO Annex 14, taxiway edge lights are fixed blue lights that define the edges of taxiways."
+    },
+    {
+      "id": "al-135",
+      "question": "The abbreviation PAPI stands for:",
+      "answer": "Precision Approach Path Indicator. PAPI is a visual aid that provides guidance to a pilot during approach to land by showing a colour-coded indication of the aircraft's position relative to the correct glide path."
+    },
+    {
+      "id": "al-136",
+      "question": "Which part of the AIP contains a brief description of the service(s) responsible for search and rescue?",
+      "answer": "GEN (General). The GEN (General) section of the AIP contains background information about the state's aviation services, including a description of the Search and Rescue organisation."
+    },
+    {
+      "id": "al-137",
+      "question": "The unit responsible for promoting efficient organisation of search and rescue service is the:",
+      "answer": "Rescue Co-ordination Centre (RCC). Per ICAO Annex 12, the RCC is responsible for co-ordinating and promoting the efficient operation of search and rescue services within a Search and Rescue Region."
+    },
+    {
+      "id": "al-138",
+      "question": "The ground-air visual code for 'REQUIRE ASSISTANCE' is:",
+      "answer": "V. The letter 'V' displayed on the ground as a visual signal means 'Require assistance'. This is part of the ICAO ground-to-air visual code for survivors."
+    },
+    {
+      "id": "al-139",
+      "question": "The ground-air visual code for 'REQUIRE MEDICAL ASSISTANCE' is:",
+      "answer": "X. The letter 'X' displayed on the ground means 'Require medical assistance'. This is the ICAO ground-to-air visual code for survivors requiring medical help."
+    },
+    {
+      "id": "al-140",
+      "question": "When letters are used for registration mark combinations, which combination shall not be used as it might be confused with urgent signals?",
+      "answer": "PAN. The word PAN (PAN PAN PAN) is the international urgency signal in radiotelephony, so it cannot be used as an aircraft registration mark per ICAO Annex 7."
+    },
+    {
+      "id": "al-141",
+      "question": "What is the meaning of 'DETRESFA'?",
+      "answer": "Distress phase. DETRESFA is the codeword used to designate the Distress phase, the third and most serious emergency phase in ICAO Annex 12, when an aircraft and its occupants are in grave and imminent danger requiring immediate assistance."
+    },
+    {
+      "id": "al-142",
+      "question": "Each State under ICAO Annex 17 shall ensure the establishment of a security programme:",
+      "answer": "At each airport. Annex 17 (Security) requires each contracting state to establish and implement a security programme at each of its airports that serves civil aviation."
+    },
+    {
+      "id": "al-143",
+      "question": "The ICAO Annex 17 comprises rules to establish security measures for passengers and:",
+      "answer": "Cabin baggage, checked baggage, cargo and other goods, access control and airport design. Annex 17 covers the full scope of aviation security measures including all categories of baggage, cargo, access control, and physical airport security design."
+    },
+    {
+      "id": "al-144",
+      "question": "The national civil aviation security programme shall be established by:",
+      "answer": "Each contracting state. Under ICAO Annex 17, each contracting state is responsible for establishing and implementing its own national civil aviation security programme."
+    },
+    {
+      "id": "al-145",
+      "question": "The movement area of an airfield, the adjacent lands and buildings or the parts of them with controlled access is called:",
+      "answer": "Aeronautical part (restricted area / security restricted area). The movement area and adjacent controlled-access areas of an airfield constitute the 'air side' or aeronautical part, where access is strictly controlled for security purposes."
+    },
+    {
+      "id": "al-146",
+      "question": "Who is responsible, under Annex 13 of the Chicago Convention, for the initiation of an accident investigation?",
+      "answer": "The government of the state in which the accident took place. Per ICAO Annex 13, the state of occurrence is responsible for initiating, instituting, and conducting the investigation of an accident or serious incident."
+    },
+    {
+      "id": "al-147",
+      "question": "The sole objective of the investigation of an accident or incident shall be the:",
+      "answer": "Prevention of accidents or incidents. Per ICAO Annex 13, the sole objective of accident investigation is accident prevention. It is explicitly stated that the investigation is not for the purpose of apportioning blame or liability."
+    },
+    {
+      "id": "al-148",
+      "question": "After landing, while taxiing towards the apron the landing gear sinks into a hole. Nobody gets injured, but the aircraft sustains a structural failure. How is this classified?",
+      "answer": "This is an accident and the crew must follow the procedure relevant to this case. Under ICAO Annex 13, an aviation accident is defined as an occurrence where an aircraft sustains structural damage — even without personal injury. Structural failure qualifies as an accident."
+    },
+    {
+      "id": "al-149",
+      "question": "Who is responsible for the initiation of an accident investigation?",
+      "answer": "The Authority of the State in which the accident took place. Per ICAO Annex 13, the state of occurrence has the primary responsibility to institute and conduct the safety investigation."
+    },
+    {
+      "id": "al-150",
+      "question": "What is the primary purpose of an aircraft accident investigation?",
+      "answer": "To identify the reasons and work out safety recommendations. The primary purpose is accident prevention through identifying causes and contributing factors and issuing safety recommendations — not to assign blame or determine liability."
+    },
+    {
+      "id": "al-151",
+      "question": "With respect to aircraft accident and incident investigation, what are the three categories regarding aircraft occurrences?",
+      "answer": "Incident, Serious incident, and Accident. Per ICAO Annex 13 and EU Regulation 996/2010, the three categories of aviation occurrences subject to investigation are: Incident, Serious incident, and Accident."
+    },
+    {
+      "id": "al-152",
+      "question": "(EU) What is the correct phrase with respect to wake turbulence to indicate that a light aircraft is following an aircraft of a higher wake turbulence category?",
+      "answer": "Caution wake turbulence. ATC uses the phrase 'Caution wake turbulence' when issuing traffic information to a lighter aircraft following a heavier one, to warn the pilot of the potential wake turbulence hazard."
+    },
+    {
+      "id": "al-153",
+      "question": "According to ICAO Annex 2, the term 'aerodrome traffic' is defined as:",
+      "answer": "All traffic on the movement area of an aerodrome and all aircraft flying in the vicinity of an aerodrome. Per ICAO Annex 2, aerodrome traffic includes all traffic on the movement area and all aircraft operating in the vicinity (in the aerodrome traffic circuit or approaching to land / departing)."
+    },
+    {
+      "id": "al-154",
+      "question": "Which answer is correct with regard to separation in airspace 'E'?",
+      "answer": "IFR traffic is separated only from other IFR traffic. In Class E airspace, ATC provides separation between IFR flights only. VFR flights are not separated from anyone — they fly see-and-avoid."
+    },
+    {
+      "id": "al-155",
+      "question": "Which transponder code has to be set unrequested during an emergency?",
+      "answer": "7700. In an emergency, the pilot must squawk 7700 (Emergency/Distress) without waiting for ATC to request it. This is the only transponder code that must be set spontaneously without ATC instruction."
+    },
+    {
+      "id": "al-156",
+      "question": "What does a 'V' mean when spotted on the ground?",
+      "answer": "Require assistance. The ground-to-air visual signal 'V' means 'Require assistance'. It is one of the ICAO-standard signals displayed by survivors or stranded persons to attract the attention of search and rescue aircraft."
+    },
+    {
+      "id": "al-157",
+      "question": "Name the callsign suffixes for the ATC ATSU(s) that control aircraft on the ground.",
+      "answer": "GROUND or TOWER. ATC units controlling aircraft on the ground use the callsign suffixes 'GROUND' (ground movement controller) or 'TOWER' (aerodrome controller). 'APPROACH' and 'CONTROL' are used for airborne traffic."
+    },
+    {
+      "id": "al-158",
+      "question": "A runway distance sign shows '25' with an arrow. What does this sign indicate?",
+      "answer": "From this intersection the available runway length is 2500 m in the stated direction. Runway remaining distance signs show the distance available from that point to the end of the runway in hundreds of metres (25 = 2500 m)."
+    },
+    {
+      "id": "al-159",
+      "question": "The 'IDENT' button on the transponder has to be used:",
+      "answer": "Only once after a direct request by the ATC. The IDENT feature must only be activated when specifically requested by ATC — never spontaneously before entering a CTA or any airspace class."
+    },
+    {
+      "id": "al-160",
+      "question": "Assuming no other instruction from ATC, what squawk MUST be used when flying in the circuit at an aerodrome that is not close to or inside controlled airspace (assuming the aircraft is so equipped)?",
+      "answer": "7000. In uncontrolled airspace with no ATC-assigned code, the standard conspicuity code is 7000 (used in Europe/ICAO regions). This is the default code for VFR flights not under ATC radar service."
+    },
+    {
+      "id": "al-161",
+      "question": "The AIP (Aeronautical Information Publication) contains sections: which section covers aerodromes, meteorology, communications, and general information? What are the three main parts of an AIP?",
+      "answer": "The three main parts of the AIP are: GEN (General — administrative and non-operational information), ENR (En-route — airspace, procedures, navigation aids), and AD (Aerodromes — individual aerodrome data including charts, frequencies, procedures)."
+    },
+    {
+      "id": "al-162",
+      "question": "A Pre-Flight Information Bulletin (PIB) is a presentation of current:",
+      "answer": "NOTAM information of operational significance prepared prior to flight. The PIB is a compiled set of current NOTAMs selected for relevance to a specific flight, prepared by the ARO/AIS before departure."
+    },
+    {
+      "id": "al-163",
+      "question": "When two aircraft are approaching head-on or approximately so, and there is danger of collision, each shall:",
+      "answer": "Alter heading to the right. Per ICAO Annex 2, when two aircraft are approaching head-on or nearly so and there is risk of collision, both must alter course to the right to pass clear of each other."
+    },
+    {
+      "id": "al-164",
+      "question": "What is the minimum age to obtain a private pilot licence (PPL)?",
+      "answer": "17 years. Under ICAO Annex 1 and EASA Part-FCL, the minimum age for issue of a Private Pilot Licence (PPL(A) or PPL(H)) is 17 years."
+    }
+  ]
+}
